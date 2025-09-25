@@ -3,8 +3,10 @@
 using namespace std;
 
 int main(){
-    int age;
-    cout<< &age << endl;
+    int numbers;
+    cout << "your numbers: ";
+    cin>>numbers;
+    cout<<"the answer is: " <<numbers<<endl;
 
     
     return 0;
