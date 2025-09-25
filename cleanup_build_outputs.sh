@@ -9,7 +9,8 @@ git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
 IGNORE_LIST=("a.out" "practice" "calculator")
 
 touch .gitignore
-for item in "${IGNORE_LIST[@]}"; do
+for item in "${I
+GNORE_LIST[@]}"; do
   if ! grep -qxF "$item" .gitignore; then
     echo "$item" >> .gitignore
     echo "➕ 已写入 .gitignore: $item"
